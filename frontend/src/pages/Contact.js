@@ -83,7 +83,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Address',
-      details: '123 Main Street, Hosur, Tamil Nadu 635109',
+      details: 'B2/8, SBM Layout, Anthivadi, Hosur, Tamil Nadu 635109, India ',
       action: 'Get Directions'
     },
     {
@@ -93,7 +93,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Phone',
-      details: '+91 98765 43210',
+      details: '+91 9862890897 / +91 9363298118 ',
       action: 'Call Now'
     },
     {
@@ -114,7 +114,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Hours',
-      details: 'Mon-Sat: 9AM-8PM, Sun: 10AM-6PM',
+      details: 'Mon-Sun: 9AM-9PM',
       action: 'Emergency 24/7'
     }
   ];
@@ -124,11 +124,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.pexels.com/photos/6800782/pexels-photo-6800782.jpeg" 
-            alt="Dental office facilities"
-            className="w-full h-full object-cover opacity-20"
-          />
+          
           <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-purple-800/70 to-purple-900/80"></div>
         </div>
 
@@ -303,20 +299,7 @@ const Contact = () => {
               </div>
 
               {/* Map Placeholder */}
-              <div className="bg-gradient-to-br from-purple-100 to-lavender-100 p-8 rounded-2xl border border-purple-200">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  Find Us on Map
-                </h3>
-                <div className="bg-white/50 h-48 rounded-xl flex items-center justify-center border-2 border-dashed border-purple-300">
-                  <div className="text-center">
-                    <svg className="w-12 h-12 text-purple-400 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                    </svg>
-                    <p className="text-purple-600 font-medium">Interactive Map</p>
-                    <p className="text-sm text-purple-500">Coming Soon</p>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -337,7 +320,7 @@ const Contact = () => {
             Don't wait in pain. Our emergency dental services are available 24/7 for urgent dental problems.
           </p>
           <a
-            href="tel:+919876543210"
+            href="tel: +91 9862890897"
             className="bg-white text-red-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg inline-flex items-center"
           >
             <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">

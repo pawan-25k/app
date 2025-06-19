@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/SDCLogo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,15 +31,18 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          
             <div className="flex items-center">
               <img 
-                src="https://i.imgur.com/LfXqJKH.png" 
-                alt="Sakthi Dental Clinic Logo"
-                className="h-16 w-auto"
-              />
+          src={logo}
+          alt="Sakthi Dental Clinic Logo"
+           className="h-10 w-auto"// Set explicit height
+          width={120} // Approximate width
+          height={40} // Approximate height
+          loading="lazy" // Lazy load if below the fold
+        />
             </div>
-          </Link>
+          
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -61,7 +65,7 @@ const Navbar = () => {
             ))}
             <Link
               to="/contact"
-              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-full font-semibold hover:from-red-700 hover:to-red-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-3 rounded-full font-semibold hover:from-purple-700 hover:to-purple-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Book Appointment
             </Link>
